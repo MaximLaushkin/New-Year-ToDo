@@ -20,7 +20,7 @@ tasksList.addEventListener('click', doneTask)
 function addTask(event) {
     event.preventDefault();// отменяем обновление при отправке формы
     let taskText = taskInput.value.trim(); //сохраняем значение что ввели в поле
-    if (taskText = '') {
+    if (taskText === '') {
       alert("Введите текст задачи!")
       return;
     }
