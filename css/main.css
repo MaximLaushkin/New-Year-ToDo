@@ -1,5 +1,8 @@
 html, body {
-  min-height: 100vh;
+  min-height: 100vh; /* Минимальная высота страницы */
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  margin: 0; /* Убираем стандартные отступы */
+  padding: 0; /* Убираем стандартные отступы */
 }
 
 body {
@@ -9,34 +12,43 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .aside {
   height: 400px;
 }
+
 .main {
   height: 400px;
 }
+
 .d-flex {
   display: flex;
 }
+
 .task-title {
   font-weight: 400;
   padding-top: 5px;
 }
+
 .gray {
   color: #f1e8e8;
 }
+
 .task-title--done {
   text-decoration: line-through;
   color: #CDCDCD;
 }
+
 .task-item__buttons {
   display: flex;
   column-gap: 5px;
 }
+
 .notify-holder {
   height: 60px;
   margin-bottom: 20px;
 }
+
 .empty-list {
   display: flex;
   flex-direction: column;
@@ -45,32 +57,34 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 .empty-list__title {
   font-size: 28px;
   margin-bottom: 15px;
   font-weight: 300;
 }
+
 .empty-list__icon {
   color: #42BE2A;
   font-size: 32px;
 }
-.btn-action {
-    background-color: #e0e5ea;
-    padding: 8px 10px;
-    cursor: pointer;
-    border: 0;
-    border-radius: 4px;
-    transition: opacity 0.2s ease-in;
-    opacity: 0.5;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-action {
+  background-color: #e0e5ea;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  transition: opacity 0.2s ease-in;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-action:hover {
-    background-color: #18436e;
-    opacity: 1;
+  background-color: #18436e;
+  opacity: 1;
 }
 
 .btn-action img {
@@ -84,24 +98,30 @@ body {
 .float-right {
   float: right;
 }
+
 .copyright {
   margin-top: 40px;
   font-size: 14px;
   color: rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 30px;
-  /* position: absolute; */
-  /* bottom: 30px; */
-  /* left: 0; */
-  /* right: 0; */
+}
+
+.card.bg-light {
+  margin-bottom: 20px; /* Отступ между формой и списком */
+}
+
+.card.mb-4 {
+  margin-top: 30px; /* Отступ между списком и другими элементами */
+}
+
+#tasksList {
+  max-height: none; /* Список задач без ограничений по высоте */
+  overflow: visible; /* Показываем всё содержимое */
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Чтобы снежинки не прокручивались */
   background: linear-gradient(to bottom, #5da6eb, #102446); /* Фон */
-  height: 100vh;
 }
 
 #snow-container {
