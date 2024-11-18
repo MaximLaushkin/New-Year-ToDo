@@ -19,7 +19,11 @@ tasksList.addEventListener('click', doneTask)
 //Функции 
 function addTask(event) {
     event.preventDefault();// отменяем обновление при отправке формы
-    const taskText = taskInput.value //сохраняем значение что ввели в поле
+    const taskText = taskInput.value.trim(); //сохраняем значение что ввели в поле
+    if (taskText = '') {
+      alert("Введите текст задачи!")
+      return;
+    }
 //Новый обьект для каждой задачи
     const newTask ={
       id: Date.now(), // Время как ID обьекта
